@@ -1,42 +1,238 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bigleft {
+  display: none;
+}
+.img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.img1 {
+  filter: drop-shadow(0px 39px 60px rgba(0, 0, 0, 0.14));
+  flex-shrink: 0;
+}
+.images {
+  width: 343px;
+  height: 251px;
+  flex-shrink: 0;
+  position: relative;
+  margin-top: 32px;
+  margin-bottom: 68px;
+}
+.ss {
+  position: absolute;
+}
+.backside {
+  position: absolute;
+  right: 0;
+  width: 286px;
+  height: 157px;
+  flex-shrink: 0;
+  z-index: 0;
+}
+.frontside {
+  z-index: 1;
+  position: absolute;
+  width: 285px;
+  height: 156.208px;
+  flex-shrink: 0;
+  bottom: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.blackline {
+  z-index: 1;
+  margin-top: 14.7px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.greyline {
+  margin-top: 65px;
+  margin-left: 29px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.twoball {
+  z-index: 1;
+  margin-top: 17.6px;
+  margin-left: 19px;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.cardnumber {
+  margin-top: 85px;
+  margin-left: 19px;
+  color: var(--White, #fff);
+  font-family: 'Space Grotesk';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2.2px;
+  width: 260px;
+  height: 23px;
+}
+.cardName {
+  width: 94px;
+  height: 11px;
+  color: var(--White, #fff);
+  font-family: 'Space Grotesk';
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.286px;
+  text-transform: uppercase;
+}
+.bottomdetails {
+  position: relative;
+  display: flex;
+  margin-top: 124px;
+  margin-left: 20px;
+  width: 245px;
+  height: 11px;
+  gap: 105px;
+}
+.cardDate {
+  color: var(--White, #fff);
+  text-align: right;
+  font-family: 'Space Grotesk';
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.286px;
+  text-transform: uppercase;
+}
+.backcvc {
+  position: absolute;
+  margin-top: 74px;
+  margin-left: 230px;
+}
+@media screen and (width > 1339px) {
+  .bigleft {
+    display: block;
+    position: absolute;
+    left: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .wrapper {
+    width: 1440px;
+    height: 100vh;
+    flex-direction: row;
+    gap: 127px;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .img {
+    display: none;
   }
-}
+  .images {
+    width: 541px;
+    height: 527px;
+    flex-shrink: 0;
+  }
+  .backside {
+    width: 447px;
+    height: 245px;
+    flex-shrink: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .frontside {
+    top: 0;
+    left: 0;
+    width: 447px;
+    height: 245px;
+  }
+  .whiteback,
+  .maincard {
+    width: 100%;
+    height: 100%;
+  }
+  .whiteback {
+    border-radius: 10px;
+    background: linear-gradient(169deg, #fff 5%, #d2d3d9 91.69%);
+  }
+  .twoball {
+    width: 84px;
+    height: 47px;
+    flex-shrink: 0;
+  }
+  .cardnumber {
+    color: var(--White, #fff);
+    font-feature-settings: 'clig' off, 'liga' off;
 
-.card {
-  padding: 2em;
-}
+    /* Heading (XL) */
+    font-family: 'Space Grotesk';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3.422px;
+    width: 380px;
+    height: 36px;
+    margin-top: 139px;
+    margin-left: 32px;
+  }
+  .bottomdetails {
+    margin-top: 200px;
+    margin-left: 32px;
+    width: 383px;
+    gap: 165px;
+  }
+  .cardName {
+    width: 148px;
+    height: 18px;
+    color: var(--White, #fff);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Space Grotesk';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .cardDate {
+    width: 50px;
+    height: 18px;
+    color: var(--White, #fff);
+    text-align: right;
+    font-feature-settings: 'clig' off, 'liga' off;
 
-.read-the-docs {
-  color: #888;
+    /* Body (L) */
+    font-family: 'Space Grotesk';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .blackline {
+    width: 447px;
+    height: 54px;
+    flex-shrink: 0;
+  }
+  .greyline {
+    width: 361px;
+    height: 38px;
+    flex-shrink: 0;
+    margin-top: 101px;
+  }
+  .backcvc {
+    margin-left: 336px;
+    margin-top: 111px;
+    color: var(--White, #fff);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Space Grotesk';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
 }
