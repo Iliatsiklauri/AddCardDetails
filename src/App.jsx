@@ -1,6 +1,6 @@
 // App.jsx
 import React, { useState } from 'react';
-import InputCard from './components/InputCard';
+import InputCard from './components/Inputcard';
 import './App.css';
 import Thankyou from './components/Thankyou';
 
@@ -35,14 +35,14 @@ function App() {
           <img src="public\Group 10.png" alt="" className="bigleft" />
           <div className="images">
             <div className="backside">
-              <img src="public\Group 6.png" alt="" className="whiteback ss" />
-              <img src="public\Rectangle (1).png" alt="" className="blackline ss" />
-              <img src="public\Group 12 (1).png" alt="" className="greyline ss" />
+              <img src="Group 6.png" alt="" className="whiteback ss" />
+              <img src="Rectangle (1).png" alt="" className="blackline ss" />
+              <img src="Group 12 (1).png" alt="" className="greyline ss" />
               <p className="backcvc">{cardInfo.cvc}</p>
             </div>
             <div className="frontside">
-              <img src="public\Group 8.png" alt="" className="twoball ss" />
-              <img src="public\Oval Copy 3.png" alt="" className="maincard ss" />
+              <img src="Group 8.png" alt="" className="twoball ss" />
+              <img src="Oval Copy 3.png" alt="" className="maincard ss" />
               <p className="cardnumber ss">{cardInfo.cardNumber}</p>
               <div className="bottomdetails">
                 <p className="cardName">{cardInfo.cardholderName}</p>
@@ -50,22 +50,22 @@ function App() {
               </div>
             </div>
           </div>
-          <img src="public\Mask.png" alt="" className="img" />
+          <img src="Mask.png" alt="" className="img" />
           <Thankyou />
         </div>
       ) : (
         <div className="wrapper">
-          <img src="public\Group 10.png" alt="" className="bigleft" />
+          <img src="Group 10.png" alt="" className="bigleft" />
           <div className="images">
             <div className="backside">
-              <img src="public\Group 6.png" alt="" className="whiteback ss" />
-              <img src="public\Rectangle (1).png" alt="" className="blackline ss" />
-              <img src="public\Group 12 (1).png" alt="" className="greyline ss" />
+              <img src="Group 6.png" alt="" className="whiteback ss" />
+              <img src="Rectangle (1).png" alt="" className="blackline ss" />
+              <img src="Group 12 (1).png" alt="" className="greyline ss" />
               <p className="backcvc">{cardInfo.cvc}</p>
             </div>
             <div className="frontside">
-              <img src="public\Group 8.png" alt="" className="twoball ss" />
-              <img src="public\Oval Copy 3.png" alt="" className="maincard ss" />
+              <img src="Group 8.png" alt="" className="twoball ss" />
+              <img src="Oval Copy 3.png" alt="" className="maincard ss" />
               <p className="cardnumber ss">{cardInfo.cardNumber}</p>
               <div className="bottomdetails">
                 <p className="cardName">{cardInfo.cardholderName}</p>
@@ -74,7 +74,7 @@ function App() {
             </div>
           </div>
           <InputCard onInputChange={handleInputChange} onFormSubmit={handleFormSubmit} />
-          <img src="public\Mask.png" alt="" className="img" />
+          <img src="Mask.png" alt="" className="img" />
         </div>
       )}
     </>

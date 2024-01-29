@@ -1,4 +1,3 @@
-// InputCard.jsx
 import React, { useState } from 'react';
 import './InputCard.css';
 import Button from './Button';
