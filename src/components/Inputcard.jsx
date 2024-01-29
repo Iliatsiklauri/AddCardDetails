@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './InputCard.css';
+import './inputCard.css';
 import Button from './Button';
 
 function hasNumbers(input) {
