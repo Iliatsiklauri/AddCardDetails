@@ -32,7 +32,7 @@ function App() {
     <>
       {cardInfo.submit ? (
         <div className="wrapper">
-          <img src="public\Group 10.png" alt="" className="bigleft" />
+          <img src="Group 10.png" alt="" className="bigleft" />
           <div className="images">
             <div className="backside">
               <img src="Group 6.png" alt="" className="whiteback ss" />
